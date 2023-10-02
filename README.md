@@ -12,3 +12,8 @@
     Consists of  outcomes, sample, choice, shuffle, distributions.
 
     For CODE2 and CODE3 refer to https://learning.oreilly.com/videos/modern-python-livelessons/9780134743400/9780134743400-MOPY_01_01_02/ 
+
+
+### CONFLUENCE
+
+https://turingcollege.atlassian.net/wiki/spaces/DLG/overview?homepageId=551780480
