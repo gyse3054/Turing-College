@@ -20,13 +20,14 @@ Addition
 
 To add a value to the current base value, use the add method:
 
-python
+```python
 
 result = calculator.add(argument)
 
     argument (float): The value that will be added to the base value.
     Returns: The updated base value after addition.
 
+```
 Subtraction
 
 To subtract a value from the current base value, use the subtract method:
