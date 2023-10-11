@@ -10,11 +10,11 @@ To use the `Calculator` class, follow these instructions:
 
 ### Initialization
 
-#### To create an instance of the calculator, you can do the following:
+To create an instance of the calculator, you can do the following:
 
 ```python
 calculator = Calculator()
-
+```
 This initializes the calculator with a base value of 0.
 Addition
 
