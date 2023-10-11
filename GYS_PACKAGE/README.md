@@ -16,7 +16,8 @@ To create an instance of the calculator, you can do the following:
 calculator = Calculator()
 ```
 This initializes the calculator with a base value of 0.
-Addition
+
+### Addition
 
 To add a value to the current base value, use the add method:
 
@@ -28,33 +29,35 @@ result = calculator.add(argument)
     Returns: The updated base value after addition.
 
 ```
-Subtraction
+### Subtraction
 
 To subtract a value from the current base value, use the subtract method:
 
-python
+```python
 
 result = calculator.subtract(argument)
 
     argument (float): The value to be subtracted from the base value.
     Returns: The updated base value after subtraction.
+```
 
-Multiplication
+### Multiplication
 
 To multiply the base value by a given value, use the multiply method:
 
-python
+```python
 
 result = calculator.multiply(argument)
 
     argument (float): The value to multiply the base value by.
     Returns: The updated base value after multiplication.
+```
 
-Division
+### Division
 
 To divide the base value by a given value, use the divide method:
 
-python
+```python
 
 result = calculator.divide(argument)
 
@@ -62,12 +65,13 @@ result = calculator.divide(argument)
     Raises:
         ValueError: If the argument is 0.
     Returns: The updated base value after division.
+```
 
-Taking Roots
+### Taking Roots
 
 To take the x-th root of the base value, use the take_root method:
 
-python
+```python
 
 result = calculator.take_root(x)
 
@@ -75,20 +79,21 @@ result = calculator.take_root(x)
     Raises:
         ValueError: If the base value is negative and x is even.
     Returns: The result of the root operation.
+```
 
-Resetting Memory
+### Resetting Memory
 
 To reset the base value to zero, use the reset_memory method:
 
-python
+```python
 
 calculator.reset_memory()
-
-Example
+```
+### Example
 
 Here's an example of how to use the Calculator class:
 
-python
+```python
 
 # Create a calculator instance
 calculator = Calculator()
@@ -100,8 +105,8 @@ calculator.divide(2)
 result = calculator.take_root(2)
 
 print("Result:", result)  # This will print the result of the operations.
-
-Error Handling
+```
+### Error Handling
 
 The Calculator class handles errors in the following way:
 
