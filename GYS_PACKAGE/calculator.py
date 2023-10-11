@@ -90,11 +90,3 @@ class Calculator:
         self.value = 0
 
 
-
-calc = Calculator()
-
-print(calc.add(5))
-print(calc.subtract(100))
-print(calc.multiply(4))
-print(calc.divide(1))
-print(calc.take_root(3))
