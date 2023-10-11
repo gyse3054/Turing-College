@@ -1,93 +1,116 @@
-Description
+\documentclass{article}
 
-The Calculator class provides a simple and versatile calculator that allows you to perform basic arithmetic operations, including addition, subtraction, multiplication, division, and taking roots. It is designed for Python and can be easily integrated into your projects to perform these operations programmatically.
-Usage
+\title{Calculator ReadMe}
+\author{Your Name}
+\date{\today}
 
-To use the Calculator class, follow these instructions:
+\begin{document}
+\maketitle
 
-    Initialization
+\section{Description}
 
-    To create an instance of the calculator, you can do the following:
+The \texttt{Calculator} class provides a simple and versatile calculator that allows you to perform basic arithmetic operations, including addition, subtraction, multiplication, division, and taking roots. It is designed for Python and can be easily integrated into your projects to perform these operations programmatically.
 
-    python
+\section{Usage}
 
+To use the \texttt{Calculator} class, follow these instructions:
+
+\subsection{Initialization}
+
+To create an instance of the calculator, you can do the following:
+
+\begin{verbatim}
 calculator = Calculator()
+\end{verbatim}
 
 This initializes the calculator with a base value of 0.
 
-Addition
+\subsection{Addition}
 
-To add a value to the current base value, use the add method:
+To add a value to the current base value, use the \texttt{add} method:
 
-python
-
+\begin{verbatim}
 result = calculator.add(argument)
+\end{verbatim}
 
-    argument (float): The value that will be added to the base value.
-    Returns: The updated base value after addition.
+\begin{itemize}
+  \item \texttt{argument} (float): The value that will be added to the base value.
+  \item Returns: The updated base value after addition.
+\end{itemize}
 
-Subtraction
+\subsection{Subtraction}
 
-To subtract a value from the current base value, use the subtract method:
+To subtract a value from the current base value, use the \texttt{subtract} method:
 
-python
-
+\begin{verbatim}
 result = calculator.subtract(argument)
+\end{verbatim}
 
-    argument (float): The value to be subtracted from the base value.
-    Returns: The updated base value after subtraction.
+\begin{itemize}
+  \item \texttt{argument} (float): The value to be subtracted from the base value.
+  \item Returns: The updated base value after subtraction.
+\end{itemize}
 
-Multiplication
+\subsection{Multiplication}
 
-To multiply the base value by a given value, use the multiply method:
+To multiply the base value by a given value, use the \texttt{multiply} method:
 
-python
-
+\begin{verbatim}
 result = calculator.multiply(argument)
+\end{verbatim}
 
-    argument (float): The value to multiply the base value by.
-    Returns: The updated base value after multiplication.
+\begin{itemize}
+  \item \texttt{argument} (float): The value to multiply the base value by.
+  \item Returns: The updated base value after multiplication.
+\end{itemize}
 
-Division
+\subsection{Division}
 
-To divide the base value by a given value, use the divide method:
+To divide the base value by a given value, use the \texttt{divide} method:
 
-python
-
+\begin{verbatim}
 result = calculator.divide(argument)
+\end{verbatim}
 
-    argument (float): The value to divide the base value by.
-    Raises:
-        ValueError: If the argument is 0.
-    Returns: The updated base value after division.
+\begin{itemize}
+  \item \texttt{argument} (float): The value to divide the base value by.
+  \item Raises:
+  \begin{itemize}
+    \item \texttt{ValueError}: If the argument is 0.
+  \end{itemize}
+  \item Returns: The updated base value after division.
+\end{itemize}
 
-Taking Roots
+\subsection{Taking Roots}
 
-To take the x-th root of the base value, use the take_root method:
+To take the x-th root of the base value, use the \texttt{take\_root} method:
 
-python
+\begin{verbatim}
+result = calculator.take\_root(x)
+\end{verbatim}
 
-result = calculator.take_root(x)
+\begin{itemize}
+  \item \texttt{x} (float): The root to be taken.
+  \item Raises:
+  \begin{itemize}
+    \item \texttt{ValueError}: If the base value is negative and x is even.
+  \end{itemize}
+  \item Returns: The result of the root operation.
+\end{itemize}
 
-    x (float): The root to be taken.
-    Raises:
-        ValueError: If the base value is negative and x is even.
-    Returns: The result of the root operation.
+\subsection{Resetting Memory}
 
-Resetting Memory
+To reset the base value to zero, use the \texttt{reset\_memory} method:
 
-To reset the base value to zero, use the reset_memory method:
+\begin{verbatim}
+calculator.reset\_memory()
+\end{verbatim}
 
-python
+\section{Example}
 
-    calculator.reset_memory()
+Here's an example of how to use the \texttt{Calculator} class:
 
-Example
-
-Here's an example of how to use the Calculator class:
-
-python
-
+\begin{verbatim}
 # Create a calculator instance
 calculator = Calculator()
 
@@ -95,13 +118,22 @@ calculator = Calculator()
 calculator.add(5)
 calculator.multiply(3)
 calculator.divide(2)
-result = calculator.take_root(2)
+result = calculator.take\_root(2)
 
 print("Result:", result)  # This will print the result of the operations.
+\end{verbatim}
 
-Error Handling
+\section{Error Handling}
 
-The Calculator class handles errors in the following way:
+The \texttt{Calculator} class handles errors in the following way:
 
-    When division by zero is attempted, a ValueError is raised.
-    When trying to take an even root of a negative number, a ValueError is raised.
+\begin{itemize}
+  \item When division by zero is attempted, a \texttt{ValueError} is raised.
+  \item When trying to take an even root of a negative number, a \texttt{ValueError} is raised.
+\end{itemize}
+
+Make sure to handle these exceptions in your code appropriately.
+
+Feel free to integrate this \texttt{Calculator} class into your Python projects for simple arithmetic operations. If you have any questions or need further assistance, please refer to the provided method descriptions or consult the Python documentation.
+
+\end{document}
