@@ -2,7 +2,7 @@
 
 ## Description
 
-The `Calculator` class provides a simple and versatile calculator that allows you to perform basic arithmetic operations, including addition, subtraction, multiplication, division, and taking roots. It is designed for Python and can be easily integrated into your projects to perform these operations programmatically.
+The `Calculator` class provides a simple calculator that allows you to perform basic arithmetic operations, including addition, subtraction, multiplication, division, and taking roots.
 
 ## Usage
 
@@ -104,7 +104,6 @@ calculator.multiply(3)
 calculator.divide(2)
 result = calculator.take_root(2)
 
-print("Result:", result)  # This will print the result of the operations.
 ```
 ### Error Handling
 
@@ -113,4 +112,3 @@ The Calculator class handles errors in the following way:
     When division by zero is attempted, a ValueError is raised.
     When trying to take an even root of a negative number, a ValueError is raised.
 
-Make sure to handle these exceptions in your code appropriately.
