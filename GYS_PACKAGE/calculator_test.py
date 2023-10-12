@@ -1,4 +1,4 @@
-from GYS_PACKAGE.calculator import Calculator
+from calculator.calculator import Calculator
 import pytest
 
 
