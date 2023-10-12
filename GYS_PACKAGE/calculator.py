@@ -1,5 +1,7 @@
-
-
+"""
+This module contains a calculator implementation.
+"""
+__version__ = '1.0.0'
 
 class Calculator:
     def __init__(self):
