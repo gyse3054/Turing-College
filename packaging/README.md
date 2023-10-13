@@ -4,6 +4,13 @@
 
 The `Calculator` class provides a simple calculator that allows you to perform basic arithmetic operations, including addition, subtraction, multiplication, division, and taking roots.
 
+## Installation
+
+To install this package use this:
+```python
+pip install -i https://test.pypi.org/simple/ example-package-gyse3054==0.0.1
+```
+
 ## Usage
 
 To use the `Calculator` class, follow these instructions:
