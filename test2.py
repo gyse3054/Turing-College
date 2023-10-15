@@ -1,3 +1,11 @@
-pypi-AgENdGVzdC5weXBpLm9yZwIkNjAwZmQyZDEtYThlMy00NzJiLTgyYzQtMTdkOGM3ZTgzNzI4AAIqWzMsImM3Njk1ZWM1LTExZjMtNDA3My1iNjFmLTQ1MjE5NWJlNTkxNiJdAAAGIL237ZiVh2jegAu5VbDhItVn0U36mt8WVEx4VTPXATOO
+from calculator import Calculator
 
-https://test.pypi.org/project/example-package-gyse3054/0.0.1/#description
+# Create a calculator instance
+calculator = Calculator()
+
+# Perform some operations
+print(calculator.add(5))
+print(calculator.multiply(3))
+print(calculator.divide(2))
+result = calculator.take_root(2)
+print(result)

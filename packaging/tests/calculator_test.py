@@ -1,4 +1,7 @@
-from calculator.calculator import Calculator
+import sys
+import os
+sys.path.insert(0, os.path.abspath('..'))
+from packaging.src.package_gyse3054.calculator import Calculator
 import pytest
 
 
