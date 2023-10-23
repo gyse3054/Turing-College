@@ -1,2 +1,11 @@
 import numpy as np
-#Computation on NumPy Arrays: Universal Functions
+
+
+#Hacker Rank
+
+import numpy
+
+c = numpy.array(list(map(int, input().split())))
+print(numpy.reshape(c,(3,3)))
+
+print(np.linspace(1., 4., 6))
